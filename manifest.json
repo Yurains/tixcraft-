@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "拓",
+  "version": "3.0",
+  "description": "馬的我不想寫程式了",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://tixcraft.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "拓元"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://tixcraft.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
